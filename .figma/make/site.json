@@ -1,0 +1,10 @@
+{
+  "description": "국민 여가생활 만족도를 2020~2025년까지 시각화해 연도별 추이, 응답 분포, 집단별 차이와 지역 순위를 살펴볼 수 있는 한국어 통계 대시보드입니다.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
