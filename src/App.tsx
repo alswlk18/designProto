@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 
 const YEARS = [2020, 2021, 2022, 2023, 2024, 2025]
-const ACCENT = '#B6F35A'
+const ACCENT = '#FF8A3D'
 const RESPONSE_KEYS = [
   '전혀 만족하지 않는다',
   '만족하지 않는다',
@@ -11,7 +11,7 @@ const RESPONSE_KEYS = [
   '만족한다',
   '매우 만족한다',
 ] as const
-const RESPONSE_COLORS = ['#343434', '#505050', '#707070', '#aaaaaa', '#55782c', '#82b73f', ACCENT]
+const RESPONSE_COLORS = ['#343434', '#505050', '#707070', '#aaaaaa', '#80421f', '#bd612d', ACCENT]
 type Metric = 'avg' | 'satisfied'
 type Sort = 'desc' | 'asc' | 'original'
 type Cell = { sample: number | null; responses: (number | null)[]; avg: number | null; satisfied: number | null }
@@ -208,7 +208,7 @@ export default function App() {
   return <main>
     <header className="hero">
       <p className="kicker">KOSIS DATA STORY · 2020–2025</p>
-      <h1>한국인의 여가생활<br/><span>만족도 2020–2025</span></h1>
+      <h1>여가생활, 우리는<br/><span>얼마나 만족할까</span></h1>
       <p>지난 6년간 한국인의 여가생활 만족도는 어떻게 달라졌을까요? 전체 흐름부터 집단과 지역의 차이까지 살펴봅니다.</p>
     </header>
 
